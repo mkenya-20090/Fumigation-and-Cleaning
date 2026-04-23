@@ -1,0 +1,56 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "vSDiajOvg4zDTZIiddlyu"
+uri = "file://artifacts/safi-clean/public/hero-staff.png"
+type = "image"
+title = "Hero cleaning staff"
+
+[[generated]]
+id = "pDReaoR5dwqKUWOSDzWjh"
+uri = "file://artifacts/safi-clean/public/service-fumigation.png"
+type = "image"
+title = "Fumigation service"
+
+[[generated]]
+id = "w15uf4pGtYCB_ZDBU6vsq"
+uri = "file://artifacts/safi-clean/public/service-residential.png"
+type = "image"
+title = "Sparkling living room"
+
+[[generated]]
+id = "1njQ0Uo25qPf5Yy7yhS_2"
+uri = "file://artifacts/safi-clean/public/service-commercial.png"
+type = "image"
+title = "Pristine office space"
+
+[[generated]]
+id = "nG6S6ZGKUQSuwlfAPWrmK"
+uri = "file://artifacts/safi-clean/src/assets/hero.png"
+type = "image"
+title = "Hero cleaning staff"
+
+[[generated]]
+id = "Cmeb7AKmR6fg6GuQMk9DK"
+uri = "file://artifacts/safi-clean/src/assets/residential.png"
+type = "image"
+title = "Clean residential living room"
+
+[[generated]]
+id = "wCiOOxpWxzpZok_X01Srr"
+uri = "file://artifacts/safi-clean/src/assets/commercial.png"
+type = "image"
+title = "Clean commercial office"
+
+[[generated]]
+id = "NSp66LBFwWS_AlYf0jnh8"
+uri = "file://artifacts/safi-clean/src/assets/fumigation.png"
+type = "image"
+title = "Fumigation service"
+
+[[generated]]
+id = "x0rTCG66-x4ZEGlTIbVNk"
+uri = "file://artifacts/safi-clean/src/assets/team.png"
+type = "image"
+title = "Friendly cleaning team"

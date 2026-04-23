@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jashel Cleaning & Fumigation Services — Nairobi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,1,0&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+.material-symbols-rounded{font-family:'Material Symbols Rounded';font-style:normal;display:inline-flex;align-items:center;justify-content:center;font-weight:normal;font-size:inherit;line-height:1;letter-spacing:normal;text-transform:none;white-space:nowrap;word-wrap:normal;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';-webkit-font-smoothing:antialiased;user-select:none}
+:root{
+  --g900:#081c10;--g800:#0f2e1a;--g700:#175c2c;--g600:#1e7a3c;
+  --g400:#2daa59;--g300:#5dc27b;--g200:#aadcbb;--g100:#d5f0de;--g50:#eef8f2;
+  --gold:#c8a84b;--gold2:#e8c97a;--gold3:#f5e0aa;
+  --cream:#f9f6ef;--ink:#081c10;--muted:#4a7558;--faint:#9bbda8;--w:#fff
+}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--g800)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(8,28,16,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,168,75,0.18);transition:height 0.3s}
+nav.scrolled{height:60px}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-brand-icon{width:40px;height:40px;border-radius:10px;background:var(--gold);display:flex;align-items:center;justify-content:center;color:var(--g900);font-size:20px}
+.nav-brand-text{line-height:1.2}
+.nav-brand-text strong{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:700;color:var(--gold);display:block}
+.nav-brand-text span{font-size:0.68rem;color:rgba(255,255,255,0.4);letter-spacing:0.12em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:0.2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:0.88rem;font-weight:400;padding:0.5rem 0.9rem;border-radius:6px;transition:all 0.2s}
+.nav-links a:hover{color:var(--w);background:rgba(255,255,255,0.07)}
+.nav-cta{background:var(--gold)!important;color:var(--g900)!important;font-weight:600!important;padding:0.55rem 1.3rem!important;border-radius:8px!important;margin-left:0.5rem}
+.nav-cta:hover{background:var(--gold2)!important;transform:translateY(-1px)!important}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--g900);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:7rem 5% 4rem;gap:4rem;position:relative;overflow:hidden}
+.hero-orbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;animation:drift 12s ease-in-out infinite alternate}
+.orb1{width:500px;height:500px;background:rgba(45,170,89,0.07);top:-100px;right:-100px;animation-delay:0s}
+.orb2{width:350px;height:350px;background:rgba(200,168,75,0.06);bottom:0;left:-80px;animation-delay:-4s}
+.orb3{width:250px;height:250px;background:rgba(23,92,44,0.1);top:40%;left:38%;animation-delay:-8s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(30px,20px) scale(1.05)}}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.055) 1px,transparent 1px);background-size:28px 28px}
+.hero-left{position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(200,168,75,0.1);border:1px solid rgba(200,168,75,0.28);border-radius:50px;padding:0.4rem 1rem 0.4rem 0.7rem;color:var(--gold);font-size:0.78rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:2rem;animation:fadeUp 0.7s ease both}
+.hero-eyebrow .material-symbols-rounded{font-size:16px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5.5vw,5rem);font-weight:700;color:var(--w);line-height:1.1;margin-bottom:1.5rem;animation:fadeUp 0.7s 0.1s ease both}
+.hero h1 .accent{color:var(--gold);font-style:italic}
+.hero-desc{color:rgba(255,255,255,0.6);font-size:1rem;line-height:1.75;font-weight:300;margin-bottom:2.5rem;max-width:480px;animation:fadeUp 0.7s 0.2s ease both}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp 0.7s 0.3s ease both}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--g900);padding:0.9rem 1.8rem;border-radius:10px;font-weight:600;font-size:0.95rem;text-decoration:none;border:none;cursor:pointer;transition:background 0.2s,transform 0.15s;font-family:'Outfit',sans-serif}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.85);padding:0.9rem 1.8rem;border-radius:10px;font-weight:400;font-size:0.95rem;text-decoration:none;border:1px solid rgba(255,255,255,0.15);transition:all 0.2s}
+.btn-ghost:hover{background:rgba(255,255,255,0.1);border-color:rgba(200,168,75,0.4)}
+.btn-gold .material-symbols-rounded,.btn-ghost .material-symbols-rounded{font-size:18px}
+.hero-stats-row{display:flex;gap:2.5rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.07);animation:fadeUp 0.7s 0.45s ease both}
+.hstat .n{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--gold);line-height:1}
+.hstat .n span{font-size:1.6rem}
+.hstat .l{font-size:0.7rem;color:rgba(255,255,255,0.4);letter-spacing:0.08em;text-transform:uppercase;margin-top:4px}
+.hero-right{position:relative;z-index:2;animation:fadeUp 0.7s 0.35s ease both}
+.hero-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:2rem;backdrop-filter:blur(10px)}
+.hero-card-label{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:8px}
+.hero-card-label .material-symbols-rounded{font-size:14px}
+.hero-card-label::after{content:'';flex:1;height:1px;background:rgba(200,168,75,0.2)}
+.service-pills{display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1.5rem}
+.pill{display:inline-flex;align-items:center;gap:6px;background:rgba(45,170,89,0.1);border:1px solid rgba(45,170,89,0.2);border-radius:50px;padding:0.45rem 0.9rem;color:var(--g200);font-size:0.8rem}
+.pill .material-symbols-rounded{font-size:14px;color:var(--g300)}
+.hero-divider{height:1px;background:rgba(255,255,255,0.07);margin:1.5rem 0}
+.hero-trust{display:flex;align-items:center;gap:1rem}
+.trust-avatars{display:flex}
+.tavatar{width:34px;height:34px;border-radius:50%;border:2px solid var(--g900);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:600;color:var(--w);margin-left:-8px;background:var(--g700)}
+.tavatar:first-child{margin-left:0}
+.tavatar.plus{background:var(--gold);color:var(--g900)}
+.trust-text{font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.4}
+.trust-text strong{color:var(--gold);display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* TRUST BAR */
+.trust-bar{background:var(--g800);padding:1.5rem 5%;display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;border-top:1px solid rgba(200,168,75,0.1);border-bottom:1px solid rgba(200,168,75,0.1)}
+.tb-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.5);font-size:0.83rem}
+.tb-item .material-symbols-rounded{font-size:18px;color:var(--gold)}
+
+/* SECTIONS */
+section{padding:6rem 5%}
+.eyebrow{display:inline-flex;align-items:center;gap:6px;color:var(--gold);font-size:0.75rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.75rem}
+.eyebrow .material-symbols-rounded{font-size:14px}
+h2.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--g900);line-height:1.15;margin-bottom:1rem}
+h2.section-title em{font-style:italic;color:var(--g700)}
+.section-sub{color:var(--muted);font-size:1rem;line-height:1.75;max-width:520px;font-weight:300}
+
+/* SERVICES */
+#services{background:var(--w)}
+.svc-layout{display:grid;grid-template-columns:1fr 2fr;gap:5rem;align-items:start}
+.svc-sticky{position:sticky;top:100px}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.svc-card{background:var(--cream);border:1px solid var(--g100);border-radius:16px;padding:1.75rem;position:relative;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s,border-color 0.3s;cursor:default}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(8,28,16,0.1);border-color:var(--g200)}
+.svc-icon{width:54px;height:54px;border-radius:14px;background:var(--g50);border:1px solid var(--g100);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:background 0.3s,border-color 0.3s}
+.svc-card:hover .svc-icon{background:var(--g900);border-color:var(--g800)}
+.svc-icon .material-symbols-rounded{font-size:26px;color:var(--g600);transition:color 0.3s}
+.svc-card:hover .svc-icon .material-symbols-rounded{color:var(--gold)}
+.svc-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--g900);margin-bottom:0.6rem}
+.svc-card p{color:var(--muted);font-size:0.87rem;line-height:1.65;font-weight:300}
+.svc-tag{display:inline-flex;align-items:center;gap:4px;margin-top:1rem;font-size:0.72rem;color:var(--g600);letter-spacing:0.06em;font-weight:500}
+.svc-tag .material-symbols-rounded{font-size:12px}
+
+/* NUMBERS */
+.numbers{background:var(--g900);padding:5rem 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.ncard{padding:1rem;border-right:1px solid rgba(255,255,255,0.07)}
+.ncard:last-child{border-right:none}
+.ncard .material-symbols-rounded{font-size:28px;color:var(--gold);margin-bottom:0.75rem}
+.ncard .big{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--w);line-height:1}
+.ncard .big em{font-size:1.8rem;color:var(--gold);font-style:normal}
+.ncard .lbl{font-size:0.78rem;color:rgba(255,255,255,0.4);letter-spacing:0.06em;margin-top:0.4rem;text-transform:uppercase}
+
+/* WHY */
+#why{background:var(--cream)}
+.why-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3.5rem}
+.why-list{display:flex;flex-direction:column;gap:1rem}
+.witem{display:flex;gap:1.25rem;align-items:flex-start;background:var(--w);border:1px solid var(--g100);border-radius:14px;padding:1.5rem;transition:border-color 0.2s,box-shadow 0.2s}
+.witem:hover{border-color:var(--g200);box-shadow:0 8px 24px rgba(8,28,16,0.06)}
+.wicon{width:46px;height:46px;min-width:46px;border-radius:12px;background:var(--g50);border:1px solid var(--g100);display:flex;align-items:center;justify-content:center}
+.wicon .material-symbols-rounded{font-size:22px;color:var(--g600)}
+.witem h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--g900);margin-bottom:0.3rem}
+.witem p{color:var(--muted);font-size:0.85rem;line-height:1.6;font-weight:300}
+.why-panel{background:var(--g900);border-radius:24px;padding:2.5rem;position:relative;overflow:hidden}
+.why-panel::before{content:'';position:absolute;top:-80px;right:-80px;width:280px;height:280px;border-radius:50%;background:rgba(45,170,89,0.07)}
+.why-panel-inner{position:relative;z-index:2}
+.wp-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--w);margin-bottom:1.5rem;line-height:1.2}
+.wp-title em{color:var(--gold);font-style:italic}
+.cert-list{display:flex;flex-direction:column;gap:0.75rem}
+.cert{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1rem 1.25rem;transition:border-color 0.2s}
+.cert:hover{border-color:rgba(200,168,75,0.25)}
+.cert .material-symbols-rounded{font-size:24px;color:var(--gold)}
+.cert strong{color:var(--w);font-size:0.9rem;display:block;font-weight:500}
+.cert span{color:rgba(255,255,255,0.4);font-size:0.78rem}
+
+/* PROCESS */
+#process{background:var(--g900);position:relative;overflow:hidden}
+#process .section-title{color:var(--w)}
+#process .section-sub{color:rgba(255,255,255,0.45)}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem;position:relative}
+.proc-grid::before{content:'';position:absolute;top:34px;left:12.5%;right:12.5%;height:1px;background:repeating-linear-gradient(90deg,rgba(200,168,75,0.4) 0,rgba(200,168,75,0.4) 8px,transparent 8px,transparent 20px)}
+.pstep{padding:0 1.5rem;text-align:center}
+.pnum{width:68px;height:68px;border-radius:50%;background:var(--g800);border:2px solid rgba(200,168,75,0.25);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;position:relative;z-index:2;transition:all 0.3s}
+.pnum .material-symbols-rounded{font-size:28px;color:var(--gold)}
+.pstep:hover .pnum{background:var(--gold);border-color:var(--gold)}
+.pstep:hover .pnum .material-symbols-rounded{color:var(--g900)}
+.pstep-badge{display:inline-block;font-size:0.65rem;letter-spacing:0.1em;color:rgba(200,168,75,0.6);text-transform:uppercase;margin-bottom:0.75rem;font-weight:500}
+.pstep h4{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--w);margin-bottom:0.5rem}
+.pstep p{color:rgba(255,255,255,0.45);font-size:0.83rem;line-height:1.65;font-weight:300}
+
+/* TESTIMONIALS */
+#testimonials{background:var(--w)}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
+.tcard{background:var(--cream);border:1px solid var(--g100);border-radius:18px;padding:2rem;display:flex;flex-direction:column;transition:transform 0.25s,box-shadow 0.25s}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(8,28,16,0.08)}
+.tcard-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+.stars{display:flex;gap:2px}
+.stars .material-symbols-rounded{font-size:16px;color:var(--gold)}
+.qicon .material-symbols-rounded{font-size:32px;color:var(--g100)}
+.tcard blockquote{color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.75;font-weight:400;flex:1;font-style:italic}
+.tcard-foot{display:flex;align-items:center;gap:0.75rem;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--g100)}
+.tavtr{width:40px;height:40px;border-radius:50%;background:var(--g700);display:flex;align-items:center;justify-content:center;color:var(--w);font-size:0.85rem;font-weight:600}
+.tname{font-size:0.88rem;font-weight:600;color:var(--g900)}
+.trole{font-size:0.78rem;color:var(--faint);margin-top:1px}
+
+/* CONTACT */
+#contact{background:var(--g800)}
+#contact .section-title{color:var(--w)}
+#contact .section-sub{color:rgba(255,255,255,0.45)}
+.contact-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;margin-top:3.5rem}
+.cinfo{display:flex;flex-direction:column;gap:1.25rem}
+.ci-item{display:flex;align-items:flex-start;gap:1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:1.25rem;transition:border-color 0.2s}
+.ci-item:hover{border-color:rgba(200,168,75,0.2)}
+.ci-icon{width:44px;height:44px;min-width:44px;border-radius:10px;background:rgba(200,168,75,0.12);display:flex;align-items:center;justify-content:center}
+.ci-icon .material-symbols-rounded{font-size:22px;color:var(--gold)}
+.ci-item h5{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.35rem;font-weight:600}
+.ci-item p{color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:1.55;font-weight:300}
+.wa-btn{display:flex;align-items:center;gap:10px;background:#25D366;color:var(--w);padding:0.9rem 1.5rem;border-radius:12px;font-weight:500;font-size:0.92rem;text-decoration:none;margin-top:0.5rem;transition:background 0.2s,transform 0.15s}
+.wa-btn:hover{background:#1db954;transform:translateY(-1px)}
+.wa-btn .material-symbols-rounded{font-size:22px}
+.cform{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fgroup{display:flex;flex-direction:column;gap:0.4rem}
+.fgroup label{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);font-weight:500}
+.fgroup input,.fgroup textarea,.fgroup select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:0.85rem 1rem;color:var(--w);font-family:'Outfit',sans-serif;font-size:0.9rem;font-weight:300;outline:none;transition:border-color 0.2s,background 0.2s;width:100%}
+.fgroup input::placeholder,.fgroup textarea::placeholder{color:rgba(255,255,255,0.25)}
+.fgroup input:focus,.fgroup textarea:focus,.fgroup select:focus{border-color:rgba(200,168,75,0.5);background:rgba(255,255,255,0.09)}
+.fgroup select option{background:#0f2e1a;color:var(--w)}
+.fgroup textarea{resize:vertical;min-height:120px}
+
+/* FOOTER */
+footer{background:var(--g900);padding:3rem 5% 2rem;border-top:1px solid rgba(200,168,75,0.12)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:2rem}
+.fbrand strong{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--gold);display:block;margin-bottom:0.75rem}
+.fbrand p{color:rgba(255,255,255,0.35);font-size:0.85rem;line-height:1.7;font-weight:300;max-width:280px}
+.fcol h6{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:1rem;font-weight:500}
+.fcol a{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.85rem;margin-bottom:0.6rem;font-weight:300;transition:color 0.2s}
+.fcol a:hover{color:var(--gold)}
+.fcol a .material-symbols-rounded{font-size:14px}
+.footer-bot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-bot p{color:rgba(255,255,255,0.25);font-size:0.8rem}
+.footer-bot p span{color:var(--gold)}
+
+/* FAB */
+.fab{position:fixed;bottom:2rem;right:2rem;z-index:150;display:flex;align-items:center;gap:10px;background:#25D366;color:var(--w);padding:0.85rem 1.4rem;border-radius:50px;font-weight:500;font-size:0.88rem;text-decoration:none;box-shadow:0 8px 28px rgba(37,211,102,0.4);transition:transform 0.2s,box-shadow 0.2s,opacity 0.3s;font-family:'Outfit',sans-serif}
+.fab:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(37,211,102,0.5)}
+.fab .material-symbols-rounded{font-size:20px}
+.fab.hidden{opacity:0;pointer-events:none}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding:6rem 5% 4rem;gap:3rem}
+  .hero-right{display:none}
+  .svc-layout{grid-template-columns:1fr}
+  .svc-sticky{position:static}
+  .why-layout{grid-template-columns:1fr;gap:3rem}
+  .numbers{grid-template-columns:1fr 1fr}
+  .proc-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .proc-grid::before{display:none}
+  .tgrid{grid-template-columns:1fr}
+  .contact-layout{grid-template-columns:1fr;gap:3rem}
+  .footer-top{grid-template-columns:1fr;gap:2rem}
+  nav .nav-links{display:none}
+  .form-row{grid-template-columns:1fr}
+}
+@media(max-width:480px){.svc-grid{grid-template-columns:1fr}.numbers{grid-template-columns:1fr 1fr}.hero-stats-row{gap:1.5rem}}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#" class="nav-brand">
+    <div class="nav-brand-icon"><span class="material-symbols-rounded">cleaning_services</span></div>
+    <div class="nav-brand-text">
+      <strong>Jashel</strong>
+      <span>Cleaning &amp; Fumigation</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div>
+  <div class="hero-dots"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="material-symbols-rounded">verified</span>Nairobi's trusted specialists</div>
+    <h1>We Make<br>Spaces <span class="accent">Shine</span><br>&amp; Stay Safe.</h1>
+    <p class="hero-desc">Professional cleaning and fumigation for homes, offices, and commercial spaces across Nairobi. Safe products, expert teams, guaranteed results.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold"><span class="material-symbols-rounded">chat</span>Get a Free Quote</a>
+      <a href="#services" class="btn-ghost"><span class="material-symbols-rounded">expand_more</span>Our Services</a>
+    </div>
+    <div class="hero-stats-row">
+      <div class="hstat"><div class="n">5.0<span>★</span></div><div class="l">Avg Rating</div></div>
+      <div class="hstat"><div class="n">2025<span></span></div><div class="l">Est. This Year</div></div>
+      <div class="hstat"><div class="n">100<span>%</span></div><div class="l">Satisfaction Goal</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="hero-card-label"><span class="material-symbols-rounded">star</span>What We Do</div>
+      <div class="service-pills">
+        <div class="pill"><span class="material-symbols-rounded">home</span>Residential</div>
+        <div class="pill"><span class="material-symbols-rounded">business</span>Commercial</div>
+        <div class="pill"><span class="material-symbols-rounded">pest_control</span>Fumigation</div>
+        <div class="pill"><span class="material-symbols-rounded">chair</span>Upholstery</div>
+        <div class="pill"><span class="material-symbols-rounded">construction</span>Post-Build</div>
+        <div class="pill"><span class="material-symbols-rounded">yard</span>Gardens</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-trust">
+        <div class="trust-avatars">
+          <div class="tavatar">SM</div><div class="tavatar">JK</div><div class="tavatar">AL</div><div class="tavatar plus">+</div>
+        </div>
+        <div class="trust-text"><strong>Newly launched — proudly serving Nairobi</strong>quality you can count on from day one</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRUST BAR ═══ -->
+<div class="trust-bar">
+  <div class="tb-item"><span class="material-symbols-rounded">verified_user</span>Fully Insured</div>
+  <div class="tb-item"><span class="material-symbols-rounded">eco</span>Eco-Safe Products</div>
+  <div class="tb-item"><span class="material-symbols-rounded">schedule</span>Flexible Scheduling</div>
+  <div class="tb-item"><span class="material-symbols-rounded">workspace_premium</span>Certified Technicians</div>
+  <div class="tb-item"><span class="material-symbols-rounded">thumb_up</span>Satisfaction Guaranteed</div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="svc-layout">
+    <div class="svc-sticky reveal">
+      <div class="eyebrow"><span class="material-symbols-rounded">home_repair_service</span>What we offer</div>
+      <h2 class="section-title">Every Service<br>You <em>Need</em>.</h2>
+      <p class="section-sub">From routine deep cleans to full-scale fumigation — we cover it all with precision and care.</p>
+      <br><br>
+      <a href="#contact" class="btn-gold"><span class="material-symbols-rounded">send</span>Book a Service</a>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal"><div class="svc-icon"><span class="material-symbols-rounded">home</span></div><h3>Residential Cleaning</h3><p>Deep cleaning for homes and apartments — floors, surfaces, bathrooms, kitchens. Spotless, every time.</p><div class="svc-tag"><span class="material-symbols-rounded">arrow_forward</span>Homes &amp; Estates</div></div>
+      <div class="svc-card reveal"><div class="svc-icon"><span class="material-symbols-rounded">business</span></div><h3>Office &amp; Commercial</h3><p>Regular or one-off cleaning for offices, retail, and commercial spaces. We work around your schedule.</p><div class="svc-tag"><span class="material-symbols-rounded">arrow_forward</span>Offices &amp; Retail</div></div>
+      <div class="svc-card reveal"><div class="svc-icon"><span class="material-symbols-rounded">pest_control</span></div><h3>Pest Control &amp; Fumigation</h3><p>Cockroaches, bedbugs, termites, rodents — eliminated. Safe for families and pets after treatment.</p><div class="svc-tag"><span class="material-symbols-rounded">arrow_forward</span>All Pest Types</div></div>
+      <div class="svc-card reveal"><div class="svc-icon"><span class="material-symbols-rounded">chair</span></div><h3>Sofa &amp; Carpet Cleaning</h3><p>Steam and dry cleaning for upholstery, carpets, and rugs. Removes stains, allergens, and odours.</p><div class="svc-tag"><span class="material-symbols-rounded">arrow_forward</span>Upholstery &amp; Carpets</div></div>
+      <div class="svc-card reveal"><div class="svc-icon"><span class="material-symbols-rounded">construction</span></div><h3>Post-Construction Clean</h3><p>Thorough removal of dust, debris, and residue after renovations. Move-in ready, same day.</p><div class="svc-tag"><span class="material-symbols-rounded">arrow_forward</span>New &amp; Renovated Spaces</div></div>
+      <div class="svc-card reveal"><div class="svc-icon"><span class="material-symbols-rounded">yard</span></div><h3>Garden &amp; Outdoor</h3><p>Outdoor fumigation for lawns, gardens, and perimeters. Eco-products that protect your greenery.</p><div class="svc-tag"><span class="material-symbols-rounded">arrow_forward</span>Lawns &amp; Compounds</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NUMBERS ═══ -->
+<div class="numbers">
+  <div class="ncard reveal"><span class="material-symbols-rounded">star</span><div class="big">5.0<em>★</em></div><div class="lbl">Client Rating</div></div>
+  <div class="ncard reveal"><span class="material-symbols-rounded">eco</span><div class="big">100<em>%</em></div><div class="lbl">Eco-Safe Products</div></div>
+  <div class="ncard reveal"><span class="material-symbols-rounded">task_alt</span><div class="big">100<em>%</em></div><div class="lbl">Satisfaction Rate</div></div>
+  <div class="ncard reveal"><span class="material-symbols-rounded">verified_user</span><div class="big">Full<em>y</em></div><div class="lbl">Insured &amp; Certified</div></div>
+</div>
+
+<!-- ═══ WHY ═══ -->
+<section id="why">
+  <div class="eyebrow reveal"><span class="material-symbols-rounded">shield</span>Why choose Jashel</div>
+  <h2 class="section-title reveal">Built on Trust,<br>Delivered with <em>Care</em>.</h2>
+  <div class="why-layout">
+    <div class="why-list">
+      <div class="witem reveal"><div class="wicon"><span class="material-symbols-rounded">workspace_premium</span></div><div><h4>Certified Technicians</h4><p>Every team member is trained in safe chemical handling and professional cleaning methods.</p></div></div>
+      <div class="witem reveal"><div class="wicon"><span class="material-symbols-rounded">eco</span></div><div><h4>Eco-Safe Products</h4><p>Government-approved, eco-friendly chemicals — effective and safe for children and pets.</p></div></div>
+      <div class="witem reveal"><div class="wicon"><span class="material-symbols-rounded">schedule</span></div><div><h4>Punctual &amp; Reliable</h4><p>We show up on time, every time. Flexible scheduling including weekends and emergencies.</p></div></div>
+      <div class="witem reveal"><div class="wicon"><span class="material-symbols-rounded">price_check</span></div><div><h4>Transparent Pricing</h4><p>No hidden charges. Clear, itemised quotes before we start any work.</p></div></div>
+      <div class="witem reveal"><div class="wicon"><span class="material-symbols-rounded">verified_user</span></div><div><h4>Fully Insured</h4><p>All services are backed by insurance — complete peace of mind for your property.</p></div></div>
+    </div>
+    <div class="why-panel reveal">
+      <div class="why-panel-inner">
+        <div class="wp-title">Our <em>Promise</em><br>to Every Client</div>
+        <div class="cert-list">
+          <div class="cert"><span class="material-symbols-rounded">thumb_up</span><div><strong>Satisfaction Guaranteed</strong><span>We return at no cost if you're not happy</span></div></div>
+          <div class="cert"><span class="material-symbols-rounded">security</span><div><strong>Safe for Your Family</strong><span>Kid-friendly and pet-safe treatments</span></div></div>
+          <div class="cert"><span class="material-symbols-rounded">support_agent</span><div><strong>24hr WhatsApp Support</strong><span>Reach us any time for assistance</span></div></div>
+          <div class="cert"><span class="material-symbols-rounded">local_police</span><div><strong>Insured &amp; Certified</strong><span>Government-approved and fully compliant operations</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section id="process">
+  <div style="text-align:center">
+    <div class="eyebrow reveal" style="justify-content:center;color:var(--gold)"><span class="material-symbols-rounded">route</span>How it works</div>
+    <h2 class="section-title reveal" style="color:var(--w);text-align:center">Simple. Seamless. <em style="color:var(--gold)">Spotless.</em></h2>
+    <p class="section-sub reveal" style="color:rgba(255,255,255,0.45);margin:0 auto;text-align:center">From your first message to a freshly cleaned space — here's what to expect.</p>
+  </div>
+  <div class="proc-grid">
+    <div class="pstep reveal"><div class="pstep-badge">Step 01</div><div class="pnum"><span class="material-symbols-rounded">chat</span></div><h4>Contact Us</h4><p>Call, WhatsApp, or fill in our form. Tell us about your space and what you need.</p></div>
+    <div class="pstep reveal"><div class="pstep-badge">Step 02</div><div class="pnum"><span class="material-symbols-rounded">receipt_long</span></div><h4>Get a Quote</h4><p>We assess the scope and send a clear, no-obligation quote within a few hours.</p></div>
+    <div class="pstep reveal"><div class="pstep-badge">Step 03</div><div class="pnum"><span class="material-symbols-rounded">calendar_month</span></div><h4>We Schedule</h4><p>Pick a date and time that works for you. We confirm and prepare our team.</p></div>
+    <div class="pstep reveal"><div class="pstep-badge">Step 04</div><div class="pnum"><span class="material-symbols-rounded">done_all</span></div><h4>We Deliver</h4><p>Our fully-equipped team arrives on time and delivers a spotless, guaranteed result.</p></div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials">
+  <div class="eyebrow reveal"><span class="material-symbols-rounded">rate_review</span>Client reviews</div>
+  <h2 class="section-title reveal">What Our Clients <em>Say</em>.</h2>
+  <div class="tgrid">
+    <div class="tcard reveal">
+      <div class="tcard-head"><div class="stars"><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span></div><div class="qicon"><span class="material-symbols-rounded">format_quote</span></div></div>
+      <blockquote>Jashel transformed our office completely. Professional, thorough, and respectful of our workspace. We now have them on a monthly retainer.</blockquote>
+      <div class="tcard-foot"><div class="tavtr">SM</div><div><div class="tname">Sarah M.</div><div class="trole">Office Manager, Westlands</div></div></div>
+    </div>
+    <div class="tcard reveal">
+      <div class="tcard-head"><div class="stars"><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span></div><div class="qicon"><span class="material-symbols-rounded">format_quote</span></div></div>
+      <blockquote>We had a serious bedbug problem and Jashel sorted it in a single visit. Excellent service, fair price, and they followed up to ensure everything was resolved.</blockquote>
+      <div class="tcard-foot"><div class="tavtr">JK</div><div><div class="tname">James K.</div><div class="trole">Homeowner, Karen</div></div></div>
+    </div>
+    <div class="tcard reveal">
+      <div class="tcard-head"><div class="stars"><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span><span class="material-symbols-rounded">star</span></div><div class="qicon"><span class="material-symbols-rounded">format_quote</span></div></div>
+      <blockquote>Post-construction cleaning done to perfection. Everything sparkling and ready for our staff on the same day. Absolutely recommend Jashel without hesitation.</blockquote>
+      <div class="tcard-foot"><div class="tavtr">AL</div><div><div class="tname">Amina L.</div><div class="trole">Property Developer, Kilimani</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="eyebrow reveal" style="color:var(--gold)"><span class="material-symbols-rounded">send</span>Get in touch</div>
+  <h2 class="section-title reveal" style="color:var(--w)">Request a <em style="color:var(--gold)">Free Quote</em>.</h2>
+  <p class="section-sub reveal" style="color:rgba(255,255,255,0.45)">Fill in the form and we'll respond within a few hours. Or reach us directly.</p>
+  <div class="contact-layout">
+    <div class="cinfo reveal">
+      <div class="ci-item"><div class="ci-icon"><span class="material-symbols-rounded">call</span></div><div><h5>Call or WhatsApp</h5><p>+254 700 000 000<br>Mon–Sat, 7am–8pm</p></div></div>
+      <div class="ci-item"><div class="ci-icon"><span class="material-symbols-rounded">mail</span></div><div><h5>Email</h5><p>info@jashelcleaning.co.ke</p></div></div>
+      <div class="ci-item"><div class="ci-icon"><span class="material-symbols-rounded">location_on</span></div><div><h5>Service Area</h5><p>Nairobi, Kiambu, Machakos &amp; Kajiado Counties</p></div></div>
+      <a href="https://wa.me/254700000000" class="wa-btn"><span class="material-symbols-rounded">chat_bubble</span>Chat with us on WhatsApp</a>
+    </div>
+    <form class="cform reveal" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="fgroup"><label>Full Name</label><input type="text" placeholder="e.g. John Kamau" required></div>
+        <div class="fgroup"><label>Phone Number</label><input type="tel" placeholder="+254 7XX XXX XXX" required></div>
+      </div>
+      <div class="fgroup"><label>Email Address</label><input type="email" placeholder="you@email.com"></div>
+      <div class="fgroup">
+        <label>Service Needed</label>
+        <select><option value="" disabled selected>Select a service...</option><option>Residential Cleaning</option><option>Office &amp; Commercial Cleaning</option><option>Pest Control &amp; Fumigation</option><option>Sofa &amp; Carpet Cleaning</option><option>Post-Construction Cleaning</option><option>Garden &amp; Outdoor Fumigation</option><option>Multiple Services / Other</option></select>
+      </div>
+      <div class="fgroup"><label>Additional Details</label><textarea placeholder="Tell us about your space, size, and any specific concerns..."></textarea></div>
+      <button type="submit" class="btn-gold" style="align-self:flex-start;border:none;cursor:pointer;font-family:'Outfit',sans-serif">
+        <span class="material-symbols-rounded" id="btn-icon">send</span>
+        <span id="btn-text">Send Request</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-top">
+    <div class="fbrand">
+      <strong>Jashel Cleaning &amp; Fumigation</strong>
+      <p>Professional cleaning and fumigation services across Nairobi and surrounding counties. Trusted, certified, and committed to spotless results.</p>
+    </div>
+    <div class="fcol">
+      <h6>Services</h6>
+      <a href="#services"><span class="material-symbols-rounded">home</span>Residential Cleaning</a>
+      <a href="#services"><span class="material-symbols-rounded">business</span>Commercial Cleaning</a>
+      <a href="#services"><span class="material-symbols-rounded">pest_control</span>Pest Control</a>
+      <a href="#services"><span class="material-symbols-rounded">chair</span>Upholstery Cleaning</a>
+      <a href="#services"><span class="material-symbols-rounded">yard</span>Garden Fumigation</a>
+    </div>
+    <div class="fcol">
+      <h6>Contact</h6>
+      <a href="tel:+254700000000"><span class="material-symbols-rounded">call</span>+254 700 000 000</a>
+      <a href="mailto:info@jashelcleaning.co.ke"><span class="material-symbols-rounded">mail</span>info@jashelcleaning.co.ke</a>
+      <a href="#"><span class="material-symbols-rounded">location_on</span>Nairobi, Kenya</a>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <p>© 2025 <span>Jashel Cleaning &amp; Fumigation Services</span>. All rights reserved.</p>
+    <p style="font-size:0.75rem">Nairobi · Kiambu · Machakos · Kajiado</p>
+  </div>
+</footer>
+
+<!-- FAB WHATSAPP -->
+<a href="https://wa.me/254700000000" class="fab" id="fab"><span class="material-symbols-rounded">chat_bubble</span>WhatsApp Us</a>
+
+<script>
+const nav=document.getElementById('nav'),fab=document.getElementById('fab'),contact=document.getElementById('contact');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>60);
+  const r=contact.getBoundingClientRect();
+  fab.classList.toggle('hidden',r.top<window.innerHeight&&r.bottom>0);
+});
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible')}
+  });
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+function handleSubmit(e){
+  e.preventDefault();
+  const icon=document.getElementById('btn-icon'),text=document.getElementById('btn-text'),btn=e.target.querySelector('button');
+  icon.textContent='check_circle';text.textContent='Request Sent!';
+  btn.style.background='#2daa59';btn.disabled=true;
+  setTimeout(()=>{icon.textContent='send';text.textContent='Send Request';btn.style.background='';btn.disabled=false;e.target.reset();},4000);
+}
+</script>
+</body>
+</html>
